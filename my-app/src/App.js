@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
-import collegeLogo from "./college_logo.png.png";
+import collegeLogo from "./shrignanambica.jpeg";
 
 function App() {
   const [image, setImage] = useState(null);
@@ -9,8 +9,10 @@ function App() {
   const [format, setFormat] = useState("svg");
   const [loading, setLoading] = useState(false);
 
-  const API_URL = process.env.REACT_APP_API_URL || "http://127.0.0.1:5000";
 
+
+  const API_URL = "https://image-conversion-sug1.onrender.com";
+  
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -55,7 +57,7 @@ function App() {
   return (
     <div className="container fade-in">
       <div className="header slide-down">
-        <img src={collegeLogo} alt="College Logo" className="college-logo rotate-in" />
+        <img src={collegeLogo} alt="shrignanambica" className="college-logo rotate-in" />
         <h1 className="title scale-in">Image File Conversion</h1>
         <p className="subtitle zoom-in">
           <strong>Convert, optimize, and enhance your images effortlessly!</strong>
