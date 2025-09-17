@@ -10,8 +10,8 @@ function App() {
   const [loading, setLoading] = useState(false);
 
 
+  const API_URL = import.meta.env.VITE_API_URL;
 
-  const API_URL = "https://image-conversion-sug1.onrender.com";
   
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
